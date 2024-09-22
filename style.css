@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.quyosh {
+  margin-bottom: 200px;
+  margin-left: 800px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: yellow;
+  animation: quyosh 13s linear infinite;
+  position: absolute;
+  z-index: -20;
+}
+@keyframes quyosh {
+  0% {
+    transform: translateY(-100px);
+    background-color: yellow;
+  }
+  25% {
+    transform: translateY(300px);
+    background-color: orange;
+  }
+  50% {
+    transform: translateY(500px);
+    background-color: rgb(255, 208, 0);
+  }
+  100% {
+    transform: translateY(-500px);
+  }
+}
+
+.bulut {
+  margin-top: -90px;
+  display: flex;
+  position: absolute;
+  animation-duration: 10s;
+  z-index: 30;
+}
+.bulut-1 {
+  animation-name: bulut1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes bulut1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.bulut-2 {
+  animation-name: bulut2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin-top: 70px;
+}
+@keyframes bulut2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1500px);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+.bulut-3 {
+  animation-name: bulut3;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  margin-top: 50px;
+}
+@keyframes bulut3 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1500px);
+  }
+  100% {
+    transform: translateX(-400px);
+  }
+}
+
+.bulut-4 {
+  animation-name: bulut4;
+  animation-duration: 11s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  margin-top: 100px;
+}
+@keyframes bulut4 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1500px);
+  }
+  100% {
+    transform: translateX(-600px);
+  }
+}
+.bulut-5 {
+  animation-name: bulut5;
+  animation-duration: 11s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  margin-top: 80px;
+}
+@keyframes bulut5 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1500px);
+  }
+  100% {
+    transform: translateX(-800px);
+  }
+}
+
+.tog-rasmi {
+  margin-top: 100px;
+  z-index: 22;
+  position: relative;
+}
+
+.tog-rasmi img {
+  z-index: 22;
+  width: 1540px;
+}
